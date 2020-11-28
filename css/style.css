@@ -1,0 +1,41 @@
+* {
+    font-family: -apple-system, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.grid_wrapper{
+    width: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 6fr 1fr;
+    grid-template-areas:
+    "he he as"
+    "se se na"
+    "ma ma ma"
+    "fo fo fo";
+}
+header{
+    grid-area: he;
+    background-color: hotpink;
+}
+aside{
+    grid-area: as;
+    background-color: khaki;
+}
+section{
+    grid-area: se;
+    background-color: lawngreen;
+}
+main{
+    grid-area: ma;
+    background-color: tomato;
+}
+nav{
+    grid-area: na;
+    background-color: yellow;
+}
+footer{
+    grid-area: fo;
+    background-color: steelblue;
+}
