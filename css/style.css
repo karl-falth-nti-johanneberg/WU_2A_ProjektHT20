@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 * {
-    font-family: -apple-system, sans-serif;
+    font-family: 'Syne Mono', monospace;
     padding: 0px;
     margin: 0px;
 }
 .grid_wrapper{
     width: auto;
     min-height: 100vh;
+    max-height: 200vh;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 2fr 6fr 1fr;
+    grid-template-rows: 100px 50px 1fr 100px;
     grid-template-areas:
     "he he as"
     "se se na"
@@ -18,14 +20,27 @@
 header{
     grid-area: he;
     background-color: hotpink;
+    justify-content: center;
+    display: flex;
+}
+#restaurangnamn{
+    font-size: 60px;
+    height: 80%;
+    margin: auto;
+    letter-spacing: 15px;
 }
 aside{
     grid-area: as;
     background-color: khaki;
+    text-align: center;
 }
 aside img{
-    height: 100px;
+    height: 90px;
+    margin: 5px;
 }
+/* aside p{
+    font-size: 23px;
+} */
 section{
     grid-area: se;
     background-color: lawngreen;
@@ -45,6 +60,10 @@ nav ul{
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
+}
+li {
+    padding: 10px;
+    font-size: 25px;
 }
 
 }
