@@ -3,6 +3,13 @@
     font-family: 'Syne Mono', monospace;
     padding: 0px;
     margin: 0px;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+html{
+    background-image: url("/img/bild-unsplash-mat\(bakgrund\).jpg");
+    background-position: center;
+    background-size: cover;
 }
 .grid_wrapper{
     width: auto;
@@ -16,12 +23,16 @@
     "se se na"
     "ma ma ma"
     "fo fo fo";
+    backdrop-filter: blur(15px) saturate(150%) grayscale(70%);
 }
 header{
     grid-area: he;
-    background-color: hotpink;
+    position: sticky;
+    top: 0;
+    /* background-color: hotpink; */
     justify-content: center;
     display: flex;
+    background: rgba(128, 128, 0, 0.25);
 }
 #restaurangnamn{
     font-size: 60px;
@@ -31,27 +42,45 @@ header{
 }
 aside{
     grid-area: as;
-    background-color: khaki;
+    position: sticky;
+    top: 0;
+    /* background-color: khaki; */
     text-align: center;
+    background: rgba(128, 128, 0, 0.25);
 }
 aside img{
     height: 90px;
     margin: 5px;
 }
-/* aside p{
-    font-size: 23px;
-} */
 section{
     grid-area: se;
-    background-color: lawngreen;
+    display: flex;
+    /* background-color: lawngreen; */
+    align-items: center;
+    justify-content: space-around;
 }
 main{
     grid-area: ma;
-    background-color: tomato;
+    /* background-color: tomato; */
+}
+.main_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.main_flex img{
+    height: fit-content;
+}
+.radbrytning{
+    height: 10px;
+    flex-basis: 100%;
 }
 nav{
     grid-area: na;
-    background-color: yellow;
+    position: sticky;
+    top: 20px;
+    /* background-color: yellow; */
 }
 nav ul{
     display: flex;
@@ -65,9 +94,7 @@ li {
     padding: 10px;
     font-size: 25px;
 }
-
-}
 footer{
     grid-area: fo;
-    background-color: steelblue;
+    /* background-color: steelblue; */
 }
