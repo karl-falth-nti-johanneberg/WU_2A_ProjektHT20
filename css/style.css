@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-* {
+*{
     font-family: 'Syne Mono', monospace;
     padding: 0px;
     margin: 0px;
@@ -14,7 +14,6 @@ html{
 .grid_wrapper{
     width: auto;
     min-height: 100vh;
-    max-height: 200vh;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100px 50px 1fr 100px;
@@ -29,7 +28,6 @@ header{
     grid-area: he;
     position: sticky;
     top: 0;
-    /* background-color: hotpink; */
     justify-content: center;
     display: flex;
     background: rgba(128, 128, 0, 0.25);
@@ -44,24 +42,26 @@ aside{
     grid-area: as;
     position: sticky;
     top: 0;
-    /* background-color: khaki; */
     text-align: center;
     background: rgba(128, 128, 0, 0.25);
 }
 aside img{
     height: 90px;
     margin: 5px;
+    filter: hue-rotate(55deg);
 }
 section{
     grid-area: se;
     display: flex;
-    /* background-color: lawngreen; */
     align-items: center;
     justify-content: space-around;
 }
 main{
     grid-area: ma;
-    /* background-color: tomato; */
+    
+}
+main h3{
+    font-size: 35px;
 }
 .main_flex{
     display: flex;
@@ -73,14 +73,32 @@ main{
     height: fit-content;
 }
 .radbrytning{
-    height: 10px;
+    height: 20px;
     flex-basis: 100%;
+}
+.menulist{
+    margin-left: 80px;
+}
+.menulist img{
+    height: 300px;
+    width: auto;
+}
+.about{
+    width: 50vw;
+}
+.about_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#map{
+    height: 85%;
 }
 nav{
     grid-area: na;
     position: sticky;
     top: 20px;
-    /* background-color: yellow; */
 }
 nav ul{
     display: flex;
@@ -88,13 +106,20 @@ nav ul{
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+}
+ul{
     list-style-type: none;
 }
-li {
+li{
     padding: 10px;
     font-size: 25px;
+    font-size: 35px;
 }
 footer{
     grid-area: fo;
-    /* background-color: steelblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }

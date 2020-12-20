@@ -40,7 +40,7 @@
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
 Jag ska designa en webbsida, som är till för en restaurang. Min målgrupp är dem som letar efter en
-restaurang som serverar skaldjur och fisk. Detta är en banbrytande sida!!!
+restaurang som serverar skaldjur och fisk. Detta är en banbrytande sida!!! Jag ska ha en startsida, en menysida och en "om oss" sida.
     <h2>2. Planering</h2>
     
     <h3>2.1 Handskiss</h3>
@@ -97,6 +97,7 @@ restaurang som serverar skaldjur och fisk. Detta är en banbrytande sida!!!
             <!-- Vad görs på lektionen vecka 50? -->
             </td>
             <td>
+                Skriva i dokumentation, testa sidorna i tre webbläsare och kolla kontrast
             <!-- Vad görs utanför lektionen vecka 50? -->
             </td>
         </tr>
@@ -115,18 +116,69 @@ restaurang som serverar skaldjur och fisk. Detta är en banbrytande sida!!!
     Jag har fortsatt med css och html-utvekcling. Jag arbetade också med min logga i photoshop.
     <h3>Lektioner vecka 49</h3>
     <!-- Fyll på med dokumentation här. -->
-    Jag fyllde på med innehåll och ska fixa skillnader mellan tre sidor.
+    Jag fyllde på med innehåll och ska fixa skillnader mellan tre sidor, nav-taggen har byggts ut till ett navigationssystem och jag har lagt till flexbox på flera ställen.
     <h3>Lektioner vecka 50</h3>
     <!-- Fyll på med dokumentation här. -->
-
+    Jag arbetade med testning av sidorna och har fortsatt med designförbättringar o.s.v.
 
     <h2>4. Testning</h2>
+    <h2>4.1 Webbläsar-testning</h2>
+    <h3>Miscrosoft edge (baserad på chromium, samma bas som chrome)</h3>
+    <p>Jag öppnar sidorna i privat läge (inkognito) för att undvika störningar på grund av tillägg i webbläsaren.</p>
+    <img src="/misc/microsoft_edge_index_1.png" alt="Skärmdump av index.html i microsoft edge, i inkognito-läge.">
+    <img src="/misc/microsoft_edge_index_2.png" alt="Skärmdump av index.html i microsoft edge, i inkognito-läge.">
+    <a href="/index.html">index.html</a>
+    <img src="/misc/microsoft_edge_menu_1.png" alt="Skärmdump av menu.html i microsoft edge, i inkognito-läge.">
+    <img src="/misc/microsoft_edge_menu_2.png" alt="Skärmdump av menu.html i microsoft edge, i inkognito-läge.">
+    <a href="/menu.html">menu.html</a>
+    <img src="/misc/microsoft_edge_about_1.png" alt="Skärmdump av about.html i microsoft edge, i inkognito-läge.">
+    <a href="/about.html">about.html</a>
+    <h3>Mozilla Firefox</h3>
+    <p>Sidorna öppnas i privat läge.</p>
+    <img src="/misc/firefox_index_1.png" alt="Skärmdump av index.html i firefox, i inkognito-läge.">
+    <img src="/misc/firefox_index_2.png" alt="Skärmdump av index.html i firefox, i inkognito-läge.">
+    <a href="/index.html">index.html</a>
+    <img src="/misc/firefox_menu_1.png" alt="Skärmdump av menu.html i firefox, i inkognito-läge.">
+    <img src="/misc/firefox_menu_2.png" alt="Skärmdump av menu.html i firefox, i inkognito-läge.">
+    <a href="/menu.html">menu.html</a>
+    <img src="/misc/firefox_about_1.png" alt="Skärmdump av about.html i firefox, i inkognito-läge.">
+    <a href="/about.html">about.html</a>
+    <p>Css-property backdrop-filter fungerar inte i firefox. Därför blir inte bakgrunden suddig.</p>
+    <img src="/misc/backdrop-filter_compatibility.png" alt="">
+    <h3>Google Chrome</h3>
+    <p>Sidorna öppnas i privat läge.</p>
+    <img src="/misc/chrome_index_1.png" alt="Skärmdump av index.html i chrome, i inkognito-läge.">
+    <img src="/misc/chrome_index_2.png" alt="Skärmdump av index.html i chrome, i inkognito-läge.">
+    <a href="/index.html">index.html</a>
+    <img src="/misc/chrome_menu_1.png" alt="Skärmdump av menu.html i chrome, i inkognito-läge.">
+    <img src="/misc/chrome_menu_2.png" alt="Skärmdump av menu.html i chrome, i inkognito-läge.">
+    <a href="/menu.html">menu.html</a>
+    <img src="/misc/chrome_about_1.png" alt="Skärmdump av about.html i chrome, i inkognito-läge.">
+    <a href="/about.html">about.html</a>
+    <p>Det enda problemet jag sätt i de olika sidorna är att firefox inte helt stödjer css propertyn backdrop-filter.</p>
+    <h2>4.2 Contrastchecker</h2>
+    <p>Contrastchecker test med skärmdump från index.html</p>
+    <img src="/misc/contrastchecker.png" alt="skärmdump från contrastchecker">
+    <p>Jag har testat med flera färger från bakgrunden, och de flesta uppfyller inte kraven. Dock är sidan fortfarande läslig eftersom texten är vit, och omringad av en svart/grå skugga. Eftersom den mesta texten är stor så hjälper även det läsligheten, dock kan jag förstå om vissa har svårt att läsa texten på about.html.</p>
+    <h2>4.3 HTML-validering</h2>
+    <img src="/misc/w3-validator_index.png" alt="">
+    <p>Jag får error om att a-taggar inte ska finnas inuti ul-taggar, jag har byggt upp mitt navigationssystem såhär:</p>
+    <img src="/misc/navigationssystem.png" alt="">
+    <p>Jag kommer byta plats på ul- och a-taggarna och validera koden igen.</p>
+    <img src="/misc/w3-validator_index_2.png" alt="">
+    <p>Nu kommer inte några felmeddelanden.</p>
+    <p>På about.html får jag en varning om språket jag specifierat i mitt html dokument.</p>
+    <img src="/misc/w3-validator_about.png" alt="">
+    <p>Eftersom jag inte lärt mig om att specifiera språk tänker jag låta det vara, varningsmeddelandet handlar om min användning av lorem-kommandot, då det inte är ett riktigt språk är det inte optimalt att specifiera ett språk på sidan.</p>
+    <h2>4.3 CSS-validering</h2>
+    <img src="/misc/css_validering.png" alt="">
+    <p>Sidan rapporterar backdrop-filter som en egenskap som inte finns, jag vet inte varför, men eftersom det finns artiklar om egenskapen kommer jag bortse från felet. Varningen om att importerade fonter inte valideras på denna sidan bortser jag också ifrån. Eftersom källan är google kommer jag bortse från varningen.</p>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
     <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
-
+    <p>Jag tycker att projektet har varit kul, och mitt arbete har gått smidigt, med några fel här och där. Jag tycker det gick bra med min arbetsmetod, ordningen jag arbetat i och så vidare. Det som gick sämre var den kreativa processen att komma på det man vill bygga, och även arbete med photoshop. Mitt slutresultat är tillfredsställande, men jag vill fokusera mer på att få likvärdig funktion universellt, oberoende av webbläsare. Jag vill också bli bättre på tillgänglighetsanpassningar, till exempel med visuell kontrast, användarvänlighet, och användarupplevelse. Min logga hade kunnat blivit bättre, tills nästa projekt vill jag lära mig mer om photoshops funktioner, speciellt med justeringslager. Jag tror att min sida hade varit bättre om jag hade lagt mer tid på att skapa en starkare kontrast mellan innehållet och bakgrunden, jag kan experimentera med fler egenskaper i backdrop-filter. Jag tycker om estetiken på sidan, men jag ångrar mitt typsnittsval, då den jag använder nu kan se lite konstig ut med vissa bokstäver.</p>
 </body>
 </html>
